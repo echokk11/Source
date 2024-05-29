@@ -172,7 +172,7 @@ bool PacketCreate::doCreate(NetState *net, LPCTSTR pszName, bool fFemale, RACE_T
 	{
 		if ( bStr + bDex + bInt > 80 )
 			goto InvalidInfo;
-		if ( bSkillVal1 + bSkillVal2 + bSkillVal3 > 100 )
+		if ( bSkillVal1 + bSkillVal2 + bSkillVal3 > 120 )
 			goto InvalidInfo;
 	}
 
