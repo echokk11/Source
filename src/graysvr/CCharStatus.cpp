@@ -625,7 +625,8 @@ LPCTSTR CChar::GetTradeTitle() const
 		CCharBase *pCharDef = Char_GetDef();
 		ASSERT(pCharDef);
 		if ( pCharDef->GetTypeName() != pCharDef->GetTradeName() )
-			snprintf(pszTemp, MAX_NAME_SIZE, "%s %s", g_Cfg.GetDefaultMsg(pCharDef->IsFemale() ? DEFMSG_TRADETITLE_ARTICLE_FEMALE : DEFMSG_TRADETITLE_ARTICLE_MALE), pCharDef->GetTradeName());
+			//snprintf(pszTemp, MAX_NAME_SIZE, "%s %s", g_Cfg.GetDefaultMsg(pCharDef->IsFemale() ? DEFMSG_TRADETITLE_ARTICLE_FEMALE : DEFMSG_TRADETITLE_ARTICLE_MALE), pCharDef->GetTradeName());
+			snprintf(pszTemp, MAX_NAME_SIZE, "%s%s%s", "(", pCharDef->GetTradeName(), ")");
 		return pszTemp;
 	}
 

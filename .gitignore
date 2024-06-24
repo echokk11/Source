@@ -3,3 +3,5 @@
 
 # Ignore git versioning file
 /src/common/version/GitRevision.h
+x64/
+.vs/

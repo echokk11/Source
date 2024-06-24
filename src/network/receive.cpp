@@ -163,16 +163,16 @@ bool PacketCreate::doCreate(NetState *net, LPCTSTR pszName, bool fFemale, RACE_T
 		goto InvalidInfo;
 	if ( skill4 != SKILL_NONE )
 	{
-		if ( bStr + bDex + bInt > 90 )
+		if ( bStr + bDex + bInt > 100 )
 			goto InvalidInfo;
-		if ( bSkillVal1 + bSkillVal2 + bSkillVal3 + bSkillVal4 > 120 )
+		if ( bSkillVal1 + bSkillVal2 + bSkillVal3 + bSkillVal4 > 150 )
 			goto InvalidInfo;
 	}
 	else
 	{
-		if ( bStr + bDex + bInt > 80 )
+		if ( bStr + bDex + bInt > 100)
 			goto InvalidInfo;
-		if ( bSkillVal1 + bSkillVal2 + bSkillVal3 > 120 )
+		if ( bSkillVal1 + bSkillVal2 + bSkillVal3 > 150 )
 			goto InvalidInfo;
 	}
 
