@@ -178,7 +178,8 @@ bool PacketCreate::doCreate(NetState *net, LPCTSTR pszName, bool fFemale, RACE_T
 
 	if ( (resdisp < RDS_AOS) || (!(g_Cfg.m_iFeatureAOS & FEATURE_AOS_UPDATE_A)) )
 	{
-		if ( (profession == PROFESSION_NECROMANCER) || (profession == PROFESSION_PALADIN) )
+		// if ( (profession == PROFESSION_NECROMANCER) || (profession == PROFESSION_PALADIN) )
+		if ( (profession == PROFESSION_PALADIN) )
 			goto InvalidInfo;
 	}
 	if ( (resdisp < RDS_SE) || (!(g_Cfg.m_iFeatureSE & FEATURE_SE_UPDATE)) )
